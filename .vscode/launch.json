@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "autojs",
+            "request": "launch",
+            "stopOnEntry": true,
+            "device": "a226d8bf458a903e",
+            "name": "[Auto.js Pro调试]Xiaomi MI 8 Pro a226d8bf458a903e"
+        }
+    ]
+}
