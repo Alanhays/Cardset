@@ -1,3 +1,6 @@
+"nodejs";
+const {recommend} = require("./project/bXlGcmVlTVAz/liumingyeApi.node");
+const {getToken} = require("./getToken.node");
 var data = {
     "type": "YQM",
     "text": "十二月的奇迹",
@@ -7,6 +10,10 @@ var data = {
 }
 console.log(getToken(data))
 
+
+recommend.then(async function (response) {
+    console.log(response.data.data.recommendSong)
+});
 
 const recommendSong = [
     {
