@@ -21,7 +21,7 @@
     "stableMode": false
   },
   "main": "main.js",
-  "name": "Node.js使用Android原生界面",
+  "name": "Card set",
   "optimization": {
     "obfuscateComponents": false,
     "removeAccessibilityService": false,

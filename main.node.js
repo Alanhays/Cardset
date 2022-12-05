@@ -1,8 +1,9 @@
+"ui nodejs";
 require('rhino').install();
 const ui = require('ui');
 const app = require('app');
 const $java = $autojs.java;
-const { getCardListData } = require('./modules/axiosApi.node');
+const { getCardListData } = require('./modules/baidubceApi.node');
 const { datastoreName, cardListKey } = require('./modules/config.node');
 const { createDatastore } = require('datastore');
 const datastore = createDatastore(datastoreName);
@@ -35,7 +36,7 @@ class MainActivity extends ui.Activity {
 
     constructor() {
         super();
-        this.cardList = [{ title: '申请授权', url: 'https://pic.rmb.bdstatic.com/bjh/171cd6cf9e22e5a8ac1567725a71a8e4.jpeg' }];
+        this.cardList = [{ title: '申请授权', image: 'https://pic.rmb.bdstatic.com/bjh/171cd6cf9e22e5a8ac1567725a71a8e4.jpeg' }];
     }
 
     async onCreate(savedInstanceState) {
@@ -43,7 +44,7 @@ class MainActivity extends ui.Activity {
         // 应用主题
         this.getTheme().applyStyle(ui.R.style.MainTheme, true);
         super.onCreate(savedInstanceState);
-        this.cardList = await datastore.get(cardListKey)
+        // this.cardList = await datastore.get(cardListKey)
     }
 
     onContentViewSet(view) {
