@@ -5,9 +5,9 @@
   },
   "assets": [],
   "build": {
-    "build_id": "AB82155B-1",
+    "build_id": "AB82155F-1",
     "build_number": 1,
-    "build_time": 1667456086467,
+    "build_time": 1667456086468,
     "release": false
   },
   "encryptLevel": 0,
@@ -20,7 +20,7 @@
     "hideLogs": false,
     "stableMode": false
   },
-  "main":"mainDev.js",
+  "main":"main.js",
   "name": "Card set",
   "optimization": {
     "obfuscateComponents": false,
@@ -28,7 +28,7 @@
     "removeOpenCv": false,
     "unusedResources": false
   },
-  "packageName": "com.example.ui.node.android",
+  "packageName": "com.example.ui.node.androida",
   "permissionConfig": {
     "manifestPermissions": [
       "android.permission.INTERNET",
