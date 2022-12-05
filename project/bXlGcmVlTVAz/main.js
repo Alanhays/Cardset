@@ -1,5 +1,5 @@
 "nodejs";
-const {recommend} = require("./project/bXlGcmVlTVAz/liumingyeApi.node");
+const {recommend} = require("./liumingyeApi.node");
 const {getToken} = require("./getToken.node");
 var data = {
     "type": "YQM",
